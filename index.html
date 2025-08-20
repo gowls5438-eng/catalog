@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HM cooperative - 소개</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#6d64a4;          /* 보라 배경 */
+      --card:#ffffff;
+      --muted:#f2f2f7;
+      --text:#111827;
+      --text-sub:#4b5563;
+      --brand:#6d64a4;
+      --ring:#e5e7eb;
+      --radius:18px;
+      --shadow: 0 10px 20px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{ max-width:960px; margin:0 auto; padding:32px 16px 120px; }
+    header.hero{ text-align:center; color:#fff; padding:28px 12px 8px; }
+    .hero h1{ margin:0 0 8px; font-size:42px; font-weight:900; letter-spacing:.2px; }
+    .hero p{ margin:6px auto 0; max-width:720px; line-height:1.6; opacity:.95; font-weight:500; }
+
+    .card{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid var(--ring); }
+    section{ margin-top:22px; }
+    .section-title{ color:#fff; font-weight:800; font-size:20px; letter-spacing:.4px; margin:18px 4px 10px; }
+
+    .link-list{ display:grid; gap:14px; }
+    .link-card{ display:flex; flex-direction:column; padding:14px; transition: transform .12s ease, box-shadow .12s ease; }
+    .link-card:hover{ transform: translateY(-2px); box-shadow:0 14px 28px rgba(0,0,0,.12); }
+    .link-title{ font-weight:700; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+    .chip{ display:inline-flex; align-items:center; gap:6px; background:var(--muted); border-radius:12px; padding:8px 10px; font-size:14px; color:var(--text-sub); word-break:break-all; }
+    .chip svg{ width:16px; height:16px; }
+
+    .gallery{ display:grid; gap:14px; grid-template-columns: repeat(2, 1fr); }
+    .gallery .item{ aspect-ratio: 4/3; overflow:hidden; border-radius:14px; background:#eaeaf3; border:1px solid var(--ring); }
+    .gallery img{ width:100%; height:100%; object-fit:cover; display:block; transition: transform .3s ease; }
+    .gallery .item:hover img{ transform: scale(1.03); }
+
+    .map{ overflow:hidden; border-radius:14px; height:320px; border:1px solid var(--ring); }
+    .map iframe{ width:100%; height:100%; border:0; display:block; }
+
+    .bizcard{ padding:16px; }
+    .bizcard h3{ margin:0 0 8px; display:flex; align-items:center; gap:8px; font-size:20px; }
+    .grid{ display:grid; gap:10px; grid-template-columns: 120px 1fr; align-items:center; color:var(--text-sub); font-size:15px; }
+    .grid strong{ color:var(--text); font-weight:600; }
+    .grid a{ color:#1f6feb; text-decoration: none; }
+    .grid a:hover{ text-decoration: underline; }
+
+    @media (min-width: 720px){
+      .link-list{ grid-template-columns: 1fr 1fr; }
+      .gallery{ grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>HM cooperative</h1>
+      <p>함께 여는 새로운 세상의 문 ‘에이치엠쿠퍼레이티브’는 한국만화인협동조합입니다.<br>대한민국을 대표하는 콘텐츠 크리에이터의 하나가 되겠습니다.</p>
+    </header>
+
+    <section>
+      <h2 class="section-title">웹사이트 링크</h2>
+      <div class="link-list">
+        <article class="card link-card">
+          <div class="link-title">한국만화인협동조합</div>
+          <a class="chip" href="http://www.hmcoop.co.kr" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 13a5 5 0 0 1 0-7l1.5-1.5a5 5 0 0 1 7 7L17 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 11a5 5 0 0 1 0 7L12.5 19.5a5 5 0 0 1-7-7L7 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            http://www.hmcoop.co.kr
+          </a>
+        </article>
+
+        <article class="card link-card">
+          <div class="link-title">카카오톡채널 - HMcoop-한국만화인협동조합-</div>
+          <a class="chip" href="http://pf.kakao.com/_xnxjZXs/chat" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 11a8 8 0 1 1-4.03-6.96L21 4l-1.04 3.9A8 8 0 0 1 21 11Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            http://pf.kakao.com/_xnxjZXs/chat
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">갤러리</h2>
+      <div class="gallery">
+        <div class="item card"><img src="img/카탈로그_1.png" alt=""></div>
+        <div class="item card"><img src="img/카탈로그_2.png" alt=""></div>
+        <div class="item card"><img src="img/카탈로그_3.png" alt=""></div>
+        <div class="item card"><img src="img/카탈로그_4.png" alt=""></div>
+        <div class="item card"><img src="img/카탈로그_5.png" alt=""></div>
+        <div class="item card"><img src="img/카탈로그_6.png" alt=""></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">지도</h2>
+      <div class="card map">
+        <iframe loading="lazy" allowfullscreen
+          src="https://naver.me/5FEhUpSE">
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">명함</h2>
+      <div class="card bizcard">
+        <h3>
+          <img src="img/로고1.png" alt="" style="width:44px;height:44px;border-radius:10px;object-fit:cover;border:1px solid var(--ring)">
+          에이치엠쿠퍼레이티브
+        </h3>
+        <div class="grid">
+          <div>전화번호</div><div><strong>053-801-7171</strong></div>
+          <div>FAX</div><div>053-801-0020</div>
+          <div>회사</div><div>HM cooperative(한국만화인협동조합)</div>
+          <div>이메일</div><div><a href="mailto:manhwaro2013@naver.com">manhwaro2013@naver.com</a></div>
+          <div>홈페이지</div><div><a href="http://www.hmcoop.co.kr" target="_blank" rel="noopener">http://www.hmcoop.co.kr</a></div>
+          <div>우편번호</div><div>38660</div>
+          <div>주소</div><div>경상북도 경산시 경산로44길 7 (옥산동, 경상북도 개발공사) 5F</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

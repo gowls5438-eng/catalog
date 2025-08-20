@@ -66,7 +66,16 @@
 
     .bizcard{padding:16px}
     .bizcard h3{margin:0 0 8px;display:flex;align-items:center;gap:8px;font-size:20px}
-    .grid{display:grid;gap:10px;grid-template-columns:120px 1fr;align-items:center;color:var(--text-sub);font-size:15px}
+    .grid{
+    display:grid;
+    gap:10px;
+    grid-template-columns:120px 1fr;
+    align-items:start;
+    color:var(--text-sub);
+    font-size:15px;
+    word-break:keep-all;      /* 한국어 단어 단위 줄바꿈 */
+    overflow-wrap:break-word; /* 너무 긴 URL 등 줄바꿈 허용 */
+    }
     .grid strong{color:var(--text);font-weight:600}
     .grid a{color:#1f6feb;text-decoration:none}
     .grid a:hover{text-decoration:underline}
@@ -74,10 +83,16 @@
     .btn{display:inline-block;background:#6d64a4;color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none}
     .btn:hover{opacity:.9}
 
-    @media (min-width: 720px){
-      .link-list{grid-template-columns:1fr 1fr}
-      .gallery{grid-template-columns:repeat(3,1fr)}
-    }
+    @media (max-width:600px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+  .grid div:first-child{
+    font-weight:600;
+    color:var(--text);
+    margin-top:6px;
+  }
+}
   </style>
 </head>
 <body>
